@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Equipe LOG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slide-container" id="intro">
+    <div class="slide active">
+      <h1>FORMULÁRIO EQUIPE LOG</h1>
+      <p>Este formulário é exclusivo para avaliação da Equipe LOG.</p>
+    </div>
+    <div class="slide">
+      <h2>REGRAS</h2>
+      <ul>
+        <li>⛔ Você NÃO pode colar nada nas respostas.</li>
+        <li>❌ Você NÃO poderá voltar ou refazer o formulário.</li>
+        <li>⚠️ Se for descoberto que colou, o formulário será anulado.</li>
+        <li>⏱️ Você tem 12 minutos para finalizar.</li>
+      </ul>
+    </div>
+    <div class="slide">
+      <h2>Está pronto?</h2>
+      <button onclick="startForm()">Iniciar Formulário</button>
+    </div>
+  </div>
+
+  <form id="form" class="hidden" onsubmit="submitForm(event)">
+    <div id="question-container"></div>
+    <button type="button" id="nextBtn" onclick="nextQuestion()">Próxima</button>
+    <button type="submit" id="submitBtn" class="hidden">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
